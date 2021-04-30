@@ -1,0 +1,19 @@
+import React, { useContext } from 'react'
+import { IceCreamContext } from './IceCreamReducer'
+import { Button } from 'antd';
+import { Typography } from 'antd';
+
+const { Title } = Typography;
+
+const IceCream2 = () => {
+    const iceCreamContext = useContext(IceCreamContext)
+    return (
+        <div>
+            <Title level={4}>Cake {iceCreamContext.iceCreamState}</Title>
+            <Button type="primary"  onClick={() => iceCreamContext.iceCreamDispatch('BUY_ICECREAM')}>Buy IceCream</Button>
+        </div>
+    )
+}
+
+
+export default IceCream2;
