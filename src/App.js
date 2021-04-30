@@ -11,7 +11,7 @@ const { Title } = Typography;
 const App = () => {
   return (
     <div className="store">
-       <Title className="heading">IceCream Store</Title>
+       <Title className="heading"> Store</Title>
       <Row gutter={[16, 16]}>
         <Col span={12} >
           <div className="cakeStore">
